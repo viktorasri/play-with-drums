@@ -3,48 +3,74 @@
 <head>
     <meta charset="UTF-8">
     <title>Play with drums</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="styles/reset.css">
     <link rel="stylesheet" href="styles/style.css">
 </head>
 <body>
+
+    <div data-key="track1" class="play action-keys">
+        <h3><i class="fa fa-play" aria-hidden="true"></i></h3>
+        <p>Play</p>
+    </div>
+    <div class="pause action-keys">
+        <h3><i class="fa fa-pause" aria-hidden="true"></i></i></h3>
+        <p>Pause</p>
+    </div>
+    <div class="stop action-keys key">
+        <h3><i class="fa fa-stop" aria-hidden="true"></i></h3>
+        <p>Stop</p>
+    </div>
+
 <div class="container">
-    <div class="key">
+    <div class="key" data-key="65" id="65">
         <h3>A</h3>
         <p>Clap</p>
     </div>
-    <div class="key">
+    <div class="key" data-key="83">
         <h3>S</h3>
         <p>Hihat</p>
     </div>
-    <div class="key">
+    <div class="key" data-key="68">
         <h3>D</h3>
         <p>Kick</p>
     </div>
-    <div class="key">
+    <div class="key" data-key="70">
         <h3>F</h3>
         <p>Openhat</p>
     </div>
-    <div class="key">
+    <div class="key" data-key="71">
         <h3>G</h3>
         <p>Boom</p>
     </div>
-    <div class="key">
+    <div class="key" data-key="72">
         <h3>H</h3>
         <p>Ride</p>
     </div>
-    <div class="key">
+    <div class="key" data-key="74">
         <h3>J</h3>
         <p>Snore</p>
     </div>
-    <div class="key">
+    <div class="key" data-key="75">
         <h3>K</h3>
         <p>Tom</p>
     </div>
-    <div class="key">
+    <div class="key" data-key="76">
         <h3>L</h3>
         <p>Tink</p>
     </div>
-
 </div>
+<audio data-key="65" src="sounds/clap.wav"></audio>
+<audio data-key="83" src="sounds/hihat.wav"></audio>
+<audio data-key="68" src="sounds/kick.wav"></audio>
+<audio data-key="70" src="sounds/openhat.wav"></audio>
+<audio data-key="71" src="sounds/boom.wav"></audio>
+<audio data-key="72" src="sounds/ride.wav"></audio>
+<audio data-key="74" src="sounds/snare.wav"></audio>
+<audio data-key="75" src="sounds/tom.wav"></audio>
+<audio data-key="76" src="sounds/tink.wav"></audio>
+<audio data-key="track1" src="sounds/song1.mp3"></audio>
+
+<script src="scripts.js"></script>
 </body>
 </html>

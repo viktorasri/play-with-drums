@@ -22,6 +22,9 @@ body{
     left: 50%;
     transform: translateX(-50%);
 }
+.container:nth-of-type(1){
+    transform: translateY(-150%);
+}
 h3 {
     font-size: 40px;
     text-align: center;
@@ -33,10 +36,31 @@ p{
     color: #858585;
 
 }
-.key {
+.key{
     padding: 20px;
     border: 3px solid #222222;
     width: 5%;
+    transition: 0.1s;
+    cursor: pointer;
+    user-select: none;
+}
+
+.action-keys {
+    font-size: 16px;
+    padding: 15px;
+    display: inline-block;
+    margin: 100px 5px;
+    border: 3px solid #222222;
+    cursor: pointer;
+    user-select: none;
+}
+
+
+.active {
+    transform: scale(1.1);
+    border-color: #daa520;
+    box-shadow: 0px 0px 10px #daa520;
+
 }
 
 
